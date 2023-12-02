@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Your Travel Page</title>
+    <style>
+      .section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .content {
+        margin-top: 20px;
+      }
+
+      img {
+        max-width: 100%; /* Ensure images are responsive */
+        height: auto;
+        width: 100%; /* Set the width to 100% of the container */
+        max-height: 200px; /* Set a maximum height if needed */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="home">
+      <!-- Flight Details Section -->
+      <section class="section" id="flight-section">
+        <h2>Flight Details</h2>
+        <div class="content" id="flight-content">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Emirates_logo.svg/langsimple-1500px-Emirates_logo.svg.png"
+            alt="Emirates"
+            id="flightImage"
+          />
+          <p id="flightCost"></p>
+          <p id="flightDetails">Cost: 170$</p>
+        </div>
+      </section>
+
+      <!-- Restaurant Information Section -->
+      <section class="section" id="restaurant-section">
+        <h2>Restaurant Information</h2>
+        <div class="content" id="restaurant-content">
+          <img
+            src="https://s3-media0.fl.yelpcdn.com/bphoto/ebP2iButM2-vr98vTXO8cA/348s.jpg"
+            alt="Restaurant Image"
+            id="restaurant-image"
+          />
+          <p id="restaurant-cost"></p>
+          <p id="restaurantDetails">Cost: 30$</p>
+        </div>
+      </section>
+
+      <!-- Hotel Details Section -->
+      <section class="section" id="hotel-section">
+        <h2>Hotel Information</h2>
+        <div class="content" id="hotel-content">
+          <img
+            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/5d/97/cb/glamping.jpg?w=700&h=-1&s=1"
+            alt="Hotel Image"
+            id="hotel-image"
+          />
+          <p id="hotel-cost"></p>
+          <p id="hotelDetails">Cost: 320$</p>
+        </div>
+      </section>
+
+      <!-- Cost Range Section -->
+      <section class="section" id="cost-range-section">
+        <h2>Cost Range</h2>
+        <p id="cost-range-content"></p>
+        <p id="costDetails">Cost Sum: 520$</p>
+        <!-- Add cost range content here -->
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
